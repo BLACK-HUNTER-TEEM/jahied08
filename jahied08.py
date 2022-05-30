@@ -102,13 +102,8 @@ logo = """
                                            
                                            
                                                    
-                                                   
                                                           
-                                                          
-                                                          
-
-                                                          
-   """
+"""
 back = 0
 successful = []
 cpb = []
