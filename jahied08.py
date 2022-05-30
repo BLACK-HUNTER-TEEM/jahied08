@@ -69,11 +69,7 @@ logo = """
 
                                                                         
                                                                         
-
-
-                                                                            
-
-                                                                            
+                                                                                                                                                
 
 BBBBBBBBBBBBBBBBB        HHHHHHHHH     HHHHHHHHH     TTTTTTTTTTTTTTTTTTTTTTT
 
